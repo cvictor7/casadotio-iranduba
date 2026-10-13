@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Instituto Casa do Tio · Iranduba-AM</title>
+<meta name="description" content="Instituto Casa do Tio: associação sem fins lucrativos em Iranduba (AM). Levamos alegria, cuidado e esperança às comunidades de Iranduba desde 2021. Saiba como ajudar.">
+<link rel="canonical" href="https://casadotioiranduba.pages.dev/">
+<meta name="theme-color" content="#F4F0FB">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Instituto Casa do Tio">
+<meta property="og:title" content="Instituto Casa do Tio · Iranduba-AM">
+<meta property="og:description" content="Pequenos gestos, grandes transformações. Cuidado, oportunidades e dignidade para quem mais precisa em Iranduba.">
+<meta property="og:url" content="https://casadotioiranduba.pages.dev/">
+<meta property="og:image" content="https://casadotioiranduba.pages.dev/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Instituto Casa do Tio, Iranduba, Amazonas">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NGO",
+  "name": "Instituto Casa do Tio",
+  "legalName": "Instituto Casa do Tio - Instituto de Apoio Social, Educação, Trabalho, Esporte e Cultura",
+  "taxID": "42.544.509/0001-45",
+  "foundingDate": "2021-06-30",
+  "nonprofitStatus": "Nonprofit",
+  "description": "Associação sem fins lucrativos que leva alegria, cuidado e esperança às comunidades de Iranduba, no Amazonas.",
+  "url": "https://casadotioiranduba.pages.dev/",
+  "logo": "https://casadotioiranduba.pages.dev/assets/logo.png",
+  "image": "https://casadotioiranduba.pages.dev/assets/og.png",
+  "email": "casadotioiranduba@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Iranduba",
+    "addressRegion": "AM",
+    "addressCountry": "BR"
+  },
+  "areaServed": "Iranduba, Amazonas",
+  "sameAs": ["https://www.instagram.com/casadotioiranduba/"]
+}
+</script>
+
+<style>
+:root{
+  --lilas:#F4F0FB;
+  --lilas-2:#E9E1F7;
+  --papel:#FFFFFF;
+  --tinta:#1C1748;
+  --texto:#3B3662;
+  --suave:#6A6590;
+  --verde:#1E9E5A;
+  --azul:#1F6FC5;
+  --laranja:#F08A1C;
+  --roxo:#6A3DA3;
+  --roxo-escuro:#55308A;
+  --vermelho:#E0383E;
+  --sans:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --serif:"Lora",Georgia,"Times New Roman",serif;
+  --medida:40rem;
+  --largura:68rem;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--lilas);color:var(--texto);
+  font-family:var(--sans);font-size:1.0625rem;line-height:1.65;
+}
+img{max-width:100%;display:block}
+a{color:var(--roxo)}
+a:hover{color:var(--roxo-escuro)}
+:focus-visible{outline:3px solid var(--azul);outline-offset:3px;border-radius:4px}
+[hidden]{display:none!important}
+h1,h2,h3{color:var(--tinta);font-family:var(--sans);line-height:1.15;margin:0}
+h2{font-size:clamp(1.75rem,3.6vw,2.4rem);font-weight:700;letter-spacing:-.015em}
+h3{font-size:1.15rem;font-weight:600}
+p{margin:0 0 1rem}
+.pular{position:absolute;left:-999px;top:0;background:var(--tinta);color:#fff;padding:.6rem 1rem;z-index:10}
+.pular:focus{left:1rem;top:1rem}
+
+.wrap{max-width:var(--largura);margin:0 auto;padding:0 1.25rem}
+
+/* ---------- topo ---------- */
+.topo{padding:.9rem 0;background:var(--lilas);isolation:isolate}
+.topo .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.marca{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--tinta)}
+/* o arquivo do logo tem fundo branco; multiply faz o branco sumir sobre o lilás */
+.marca img{height:84px;width:auto;mix-blend-mode:multiply}
+.marca-texto{display:flex;flex-direction:column;line-height:1.05}
+.marca-texto small{font-size:.72rem;font-weight:500;color:var(--suave);letter-spacing:.02em}
+.marca-texto strong{font-size:1.2rem;font-weight:700}
+.menu{display:flex;gap:1.4rem;font-size:.95rem;font-weight:500}
+.menu a{color:var(--tinta);text-decoration:none}
+.menu a:hover{color:var(--roxo);text-decoration:underline;text-underline-offset:4px}
+
+/* ---------- início ---------- */
+.inicio{position:relative;overflow:hidden;padding:3.5rem 0 5rem}
+.inicio .wrap{position:relative;z-index:1}
+.inicio h1{
+  font-size:clamp(2.5rem,7vw,4.6rem);font-weight:700;letter-spacing:-.03em;
+  max-width:13ch;line-height:1.02;
+}
+.inicio .sub{margin-top:1.4rem;max-width:34rem;font-size:1.15rem;color:var(--texto)}
+.acoes{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
+.btn{
+  display:inline-flex;align-items:center;gap:.55rem;
+  font:600 1rem/1 var(--sans);text-decoration:none;
+  padding:.95rem 1.4rem;border-radius:999px;border:2px solid transparent;cursor:pointer;
+}
+.btn svg{width:1.15em;height:1.15em;flex:none}
+.btn-cheio{background:var(--roxo);color:#fff}
+.btn-cheio:hover{background:var(--roxo-escuro);color:#fff}
+.btn-linha{border-color:var(--tinta);color:var(--tinta);background:transparent}
+.btn-linha:hover{background:var(--tinta);color:#fff}
+.btn-verde{background:var(--verde);color:#fff}
+.btn-verde:hover{background:#17804a;color:#fff}
+
+/* losangos: a mesma "confete" dos posts da Casa do Tio */
+.confete{position:absolute;inset:0;pointer-events:none}
+.confete i{position:absolute;display:block;border-radius:22%;transform:rotate(45deg)}
+.confete i:nth-child(1){width:96px;height:96px;background:var(--laranja);right:9%;top:12%}
+.confete i:nth-child(2){width:58px;height:58px;background:var(--azul);right:26%;top:30%}
+.confete i:nth-child(3){width:130px;height:130px;background:var(--verde);right:4%;top:52%}
+.confete i:nth-child(4){width:44px;height:44px;background:var(--vermelho);right:20%;top:70%}
+.confete i:nth-child(5){width:72px;height:72px;background:var(--roxo);right:33%;top:84%}
+.confete i:nth-child(6){width:30px;height:30px;background:var(--laranja);right:38%;top:10%}
+
+/* ---------- seções ---------- */
+section{padding:4.5rem 0}
+.branco{background:var(--papel)}
+.cab{max-width:var(--medida);margin-bottom:2rem}
+.cab p{margin-top:.8rem;color:var(--suave)}
+
+/* quem somos: texto em serifa, como uma carta */
+.historia{display:grid;grid-template-columns:minmax(0,1fr);gap:2.5rem}
+.carta{font-family:var(--serif);font-size:1.18rem;line-height:1.8;color:var(--texto);max-width:36rem}
+.carta p{margin-bottom:1.25rem}
+.carta .lema{
+  font-style:italic;font-size:1.35rem;line-height:1.5;color:var(--tinta);
+  border-left:4px solid var(--vermelho);padding-left:1.1rem;margin-top:2rem
+}
+.lema-autor{display:block;font-family:var(--sans);font-style:normal;font-size:.85rem;color:var(--suave);margin-top:.5rem}
+.fatos{list-style:none;margin:0;padding:0;align-self:start}
+.fatos li{padding:1rem 0;border-top:1px solid var(--lilas-2)}
+.fatos li:last-child{border-bottom:1px solid var(--lilas-2)}
+.fatos b{display:block;color:var(--tinta);font-weight:600}
+.fatos span{color:var(--suave);font-size:.95rem}
+
+/* o que fazemos */
+.lista{list-style:none;margin:0;padding:0;display:grid;gap:2rem;grid-template-columns:minmax(0,1fr)}
+.lista li{position:relative;padding-left:2.4rem;max-width:30rem}
+.lista li::before{
+  content:"";position:absolute;left:.3rem;top:.35rem;width:16px;height:16px;
+  border-radius:22%;transform:rotate(45deg);background:var(--cor,var(--roxo))
+}
+.lista h3{margin-bottom:.35rem}
+.lista p{margin:0}
+
+.recente{
+  margin-top:3.5rem;background:var(--papel);border-radius:22px;
+  padding:2rem 1.6rem;border:2px solid var(--lilas-2);max-width:44rem
+}
+.recente .quando{font-size:.92rem;font-weight:600;color:var(--laranja);margin-bottom:.4rem}
+.recente h3{font-size:1.45rem;margin-bottom:.8rem}
+.recente p:last-child{margin-bottom:0}
+
+/* como ajudar */
+.jeitos{display:grid;grid-template-columns:minmax(0,1fr);gap:2rem;margin-bottom:2.5rem}
+.jeito h3{margin-bottom:.4rem}
+.jeito p{margin:0;max-width:28rem}
+.pix{
+  display:grid;gap:1.25rem;align-items:center;grid-template-columns:minmax(0,1fr);
+  background:var(--lilas);border-radius:22px;padding:1.6rem;margin-top:2.5rem;max-width:44rem
+}
+.pix img{width:180px;height:180px;background:#fff;border-radius:12px;padding:8px}
+.pix .chave{font:600 1.05rem/1.4 var(--sans);color:var(--tinta);word-break:break-all}
+.copiar{margin-top:.8rem}
+.aviso{font-size:.9rem;color:var(--suave);margin-top:.6rem}
+
+/* transparência */
+.dados{display:grid;grid-template-columns:minmax(0,1fr);gap:0;margin:0;max-width:44rem}
+.dados div{padding:.9rem 0;border-top:1px solid var(--lilas-2)}
+.dados div:last-child{border-bottom:1px solid var(--lilas-2)}
+.dados dt{font-size:.88rem;color:var(--suave)}
+.dados dd{margin:0;color:var(--tinta);font-weight:500}
+
+/* fotos */
+.fotos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.6rem;margin:2rem 0}
+.fotos img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:14px;background:var(--lilas-2)}
+
+/* contato */
+.contatos{list-style:none;margin:0 0 2rem;padding:0;display:grid;gap:1rem;max-width:40rem}
+.contatos li{display:flex;gap:.9rem;align-items:flex-start}
+.contatos .ico{
+  flex:none;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;color:#fff
+}
+.contatos .ico svg{width:22px;height:22px}
+.contatos small{display:block;color:var(--suave);font-size:.85rem}
+.contatos a,.contatos span.valor{color:var(--tinta);font-weight:600;text-decoration:none;word-break:break-word}
+.contatos a:hover{text-decoration:underline}
+.mapa{margin-top:2rem;border-radius:18px;overflow:hidden;border:2px solid var(--lilas-2);max-width:44rem}
+.mapa iframe{display:block;width:100%;height:300px;border:0}
+
+/* rodapé */
+.rodape{background:var(--tinta);color:#D8D3F0;padding:3rem 0 2.2rem;font-size:.92rem}
+.rodape .frase{font-family:var(--serif);font-style:italic;font-size:1.4rem;line-height:1.45;color:#fff;max-width:30rem;margin-bottom:2rem}
+.rodape a{color:#fff}
+.rodape .linha{display:flex;flex-wrap:wrap;gap:.4rem 1.6rem;justify-content:space-between}
+
+/* ---------- telas maiores ---------- */
+@media (min-width:760px){
+  .historia{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:4rem}
+  .lista{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:3rem}
+  .jeitos{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .pix{grid-template-columns:auto minmax(0,1fr)}
+  .fotos{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .recente{padding:2.4rem 2.6rem}
+}
+@media (max-width:759px){
+  .menu{display:none}
+  .marca img{height:64px}
+  .inicio{padding:2rem 0 9rem}
+  .confete i:nth-child(1){width:60px;height:60px;right:8%;top:auto;bottom:4.5rem}
+  .confete i:nth-child(2){width:36px;height:36px;right:30%;top:auto;bottom:2.4rem}
+  .confete i:nth-child(3){width:78px;height:78px;right:-14px;top:auto;bottom:-10px}
+  .confete i:nth-child(4){width:28px;height:28px;right:48%;top:auto;bottom:5.5rem}
+  .confete i:nth-child(5){width:46px;height:46px;right:auto;left:8%;top:auto;bottom:1.6rem}
+  .confete i:nth-child(6){display:none}
+  section{padding:3.5rem 0}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+  <div class="wrap">
+    <a class="marca" href="#" aria-label="Instituto Casa do Tio, início">
+      <img id="logo-img" src="" alt="" hidden>
+      <span class="marca-texto" id="logo-texto"><small>Instituto</small><strong>Casa do Tio</strong></span>
+    </a>
+    <nav class="menu" aria-label="Seções">
+      <a href="#quem-somos">Quem somos</a>
+      <a href="#o-que-fazemos">O que fazemos</a>
+      <a href="#como-ajudar">Como ajudar</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <section class="inicio" aria-labelledby="titulo">
+    <div class="confete" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="wrap">
+      <h1 id="titulo">Pequenos gestos, grandes transformações.</h1>
+      <p class="sub">O Instituto Casa do Tio leva alegria, cuidado e esperança às comunidades de Iranduba, no Amazonas, desde 2021.</p>
+      <div class="acoes">
+        <a class="btn btn-cheio" href="#como-ajudar">Quero ajudar</a>
+        <a class="btn btn-linha" data-link="instagram" href="https://www.instagram.com/casadotioiranduba/" target="_blank" rel="noopener">Ver as ações no Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="branco" id="quem-somos" aria-labelledby="t-quem">
+    <div class="wrap">
+      <div class="cab"><h2 id="t-quem">Quem somos</h2></div>
+      <div class="historia">
+        <div class="carta">
+          <p>A Casa do Tio nasceu em 2021, no meio da pandemia. Nosso fundador já fazia trabalho voluntário em Manaus havia muitos anos e, naquela época, ajudava a levar oxigênio e remédios para municípios do Amazonas.</p>
+          <p>Foi assim que ele chegou a Iranduba. A cidade fica do lado de Manaus, mas em muitas comunidades o básico ainda não tinha chegado. Ele decidiu que ia começar por ali.</p>
+          <p>O nome veio de um apelido: para quem convive com ele, o nosso fundador é o Tio, e não só nas comunidades. A ideia desde o começo era cuidar das crianças. Mas não dá para ajudar só uma parte da família, então o cuidado chega a todos que precisam.</p>
+          <p class="lema">“Nos ajude a ajudar o próximo. Vamos fazer o bem sem olhar a quem.”<span class="lema-autor">Fundador do Instituto Casa do Tio</span></p>
+        </div>
+        <ul class="fatos">
+          <li><b>Onde atuamos</b><span>Comunidades de Iranduba (AM), inclusive as que só se alcança de barco</span></li>
+          <li><b>Para quem</b><span>Crianças e famílias que precisam de apoio</span></li>
+          <li><b>Desde</b><span>2021, como associação sem fins lucrativos</span></li>
+          <li><b>Quem faz</b><span>Voluntários e amigos que doam tempo, alimentos e brinquedos</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="o-que-fazemos" aria-labelledby="t-fazemos">
+    <div class="wrap">
+      <div class="cab">
+        <h2 id="t-fazemos">O que fazemos</h2>
+        <p>A gente vai até as comunidades. Cada ação é organizada com doações e com quem se dispõe a ajudar.</p>
+      </div>
+      <ul class="lista">
+        <li style="--cor:var(--laranja)">
+          <h3>Expedições de barco</h3>
+          <p>Todo ano a equipe navega por horas até as comunidades ribeirinhas mais distantes. Leva cesta básica, medicamento e brinquedo, e também assistência social e saúde.</p>
+        </li>
+        <li style="--cor:var(--verde)">
+          <h3>Datas para as crianças</h3>
+          <p>No Dia das Crianças, a gente leva brinquedos, comida e um dia de festa para a comunidade.</p>
+        </li>
+        <li style="--cor:var(--azul)">
+          <h3>Saúde</h3>
+          <p>Já levamos campanha de saúde bucal às comunidades, com orientação e cuidado com os dentes.</p>
+        </li>
+        <li style="--cor:var(--vermelho)">
+          <h3>Rede de apoio</h3>
+          <p>Quando uma família precisa de mais do que uma doação, a gente aciona assistência social, psicólogo e os órgãos responsáveis.</p>
+        </li>
+      </ul>
+
+      <article class="recente" aria-labelledby="t-recente">
+        <p class="quando">10 e 11 de outubro de 2026</p>
+        <h3 id="t-recente">Dia das Crianças nas comunidades</h3>
+        <p>No sábado e no domingo, a equipe visitou mais de sete comunidades. Teve comida, refrigerante e brinquedo para a criançada.</p>
+        <p>Os brinquedos e os alimentos foram arrecadados de 21 de setembro a 7 de outubro, na Academia Fit One Manaus, com doação de muita gente. <a data-link="instagram" href="https://www.instagram.com/casadotioiranduba/" target="_blank" rel="noopener">Veja as fotos e os vídeos no Instagram.</a></p>
+      </article>
+    </div>
+  </section>
+
+  <section class="branco" id="como-ajudar" aria-labelledby="t-ajudar">
+    <div class="wrap">
+      <div class="cab">
+        <h2 id="t-ajudar">Como ajudar</h2>
+        <p>Toda ajuda começa com uma conversa. Fale com a gente pelo Instagram ou por e-mail e combinamos o melhor jeito.</p>
+      </div>
+      <div class="jeitos">
+        <div class="jeito">
+          <h3>Doe</h3>
+          <p>Sua contribuição ajuda a levar suprimentos e a comprar itens essenciais. Mande uma mensagem e a gente combina como doar.</p>
+        </div>
+        <div class="jeito">
+          <h3>Seja voluntário</h3>
+          <p>Doe seu tempo e seu conhecimento nas nossas próximas expedições. Conte como você pode ajudar e quando tem tempo.</p>
+        </div>
+        <div class="jeito">
+          <h3>Compartilhe</h3>
+          <p>Ajude nossa voz a ir além do rio, para chegar a mais famílias. Compartilhe as ações do nosso Instagram.</p>
+        </div>
+      </div>
+      <div class="acoes">
+        <a class="btn btn-cheio" data-link="instagram-direct" href="https://ig.me/m/casadotioiranduba" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          Chamar no Instagram
+        </a>
+        <a class="btn btn-linha" data-link="email-ajudar" href="mailto:casadotioiranduba@gmail.com?subject=Quero%20ajudar%20a%20Casa%20do%20Tio">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          Escrever um e-mail
+        </a>
+        <a class="btn btn-verde" data-link="whatsapp-ajudar" href="#" target="_blank" rel="noopener" hidden>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.5-.3Z"/></svg>
+          Chamar no WhatsApp
+        </a>
+      </div>
+
+      <div class="pix" id="bloco-pix" hidden>
+        <img id="pix-qr" src="" alt="QR Code Pix do Instituto Casa do Tio" width="180" height="180" hidden>
+        <div>
+          <h3>Doação por Pix</h3>
+          <p class="aviso" id="pix-favorecido"></p>
+          <p class="chave" id="pix-chave"></p>
+          <button class="btn btn-linha copiar" type="button" id="pix-copiar">Copiar chave Pix</button>
+          <p class="aviso" id="pix-status" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="transparencia" aria-labelledby="t-transp">
+    <div class="wrap">
+      <div class="cab">
+        <h2 id="t-transp">Transparência</h2>
+        <p>O Instituto Casa do Tio é uma associação sem fins lucrativos registrada na Receita Federal. Os dados abaixo podem ser conferidos por qualquer pessoa.</p>
+      </div>
+      <dl class="dados">
+        <div><dt>CNPJ</dt><dd>42.544.509/0001-45</dd></div>
+        <div><dt>Razão social</dt><dd>Instituto Casa do Tio - Instituto de Apoio Social, Educação, Trabalho, Esporte e Cultura</dd></div>
+        <div><dt>Natureza jurídica</dt><dd>Associação privada, sem fins lucrativos</dd></div>
+        <div><dt>Fundação</dt><dd>30 de junho de 2021</dd></div>
+        <div><dt>Sede</dt><dd>Iranduba, Amazonas</dd></div>
+      </dl>
+      <div class="acoes">
+        <a class="btn btn-linha" href="https://solucoes.receita.fazenda.gov.br/servicos/cnpjreva/cnpjreva_solicitacao.asp" target="_blank" rel="noopener">Consultar o CNPJ na Receita</a>
+        <a class="btn btn-linha" data-link="prestacao" href="#" target="_blank" rel="noopener" hidden>Ver prestação de contas</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="branco" id="acompanhe" aria-labelledby="t-acomp" hidden>
+    <div class="wrap">
+      <div class="cab">
+        <h2 id="t-acomp">Acompanhe as ações</h2>
+        <p>Fotos, vídeos e as próximas campanhas saem primeiro no Instagram.</p>
+      </div>
+      <div class="fotos" id="fotos" hidden></div>
+      <a class="btn btn-cheio" data-link="instagram" href="https://www.instagram.com/casadotioiranduba/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        <span data-texto="instagram-arroba">@casadotioiranduba</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="contato" aria-labelledby="t-contato">
+    <div class="wrap">
+      <div class="cab"><h2 id="t-contato">Contato</h2></div>
+      <ul class="contatos">
+        <li>
+          <span class="ico" style="background:var(--roxo)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></span>
+          <div><small>Instagram</small><a data-link="instagram" href="https://www.instagram.com/casadotioiranduba/" target="_blank" rel="noopener"><span data-texto="instagram-arroba">@casadotioiranduba</span></a></div>
+        </li>
+        <li>
+          <span class="ico" style="background:var(--azul)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+          <div><small>E-mail</small><a data-link="email" href="mailto:casadotioiranduba@gmail.com"><span data-texto="email">casadotioiranduba@gmail.com</span></a></div>
+        </li>
+        <li data-se="whatsapp" hidden>
+          <span class="ico" style="background:var(--verde)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg></span>
+          <div><small>WhatsApp</small><a data-link="whatsapp" href="#" target="_blank" rel="noopener"><span data-texto="whatsapp"></span></a></div>
+        </li>
+        <li>
+          <span class="ico" style="background:var(--laranja)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+          <div><small>Onde estamos</small><span class="valor" data-texto="endereco-ou-cidade">Iranduba, Amazonas</span></div>
+        </li>
+        <li data-se="horarios" hidden>
+          <span class="ico" style="background:var(--vermelho)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+          <div><small>Horário de atendimento</small><span class="valor" data-texto="horarios"></span></div>
+        </li>
+      </ul>
+      <div class="mapa" id="mapa" hidden></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <p class="frase">Cuidado, oportunidades e dignidade para quem mais precisa.</p>
+    <div class="linha">
+      <span>Instituto Casa do Tio, Iranduba-AM</span>
+      <span>CNPJ 42.544.509/0001-45</span>
+      <span id="credito" hidden></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* =====================================================================
+   CONFIG · edite só aqui
+   - Campo vazio ("") ou lista vazia ([]) esconde o botão/seção sozinho.
+   - Nunca invente dado: o que não estiver confirmado fica vazio.
+   - Marca da versão: casadotio-v2.1
+   ===================================================================== */
+const CONFIG = {
+  instagram: "casadotioiranduba",            // sem @
+  email: "casadotioiranduba@gmail.com",
+
+  whatsapp: "",                              // A CONFIRMAR · só números com DDI e DDD, ex.: "5592999999999"
+  mensagemWhatsapp: "Olá! Vi o site da Casa do Tio e quero ajudar.",
+
+  // Pix: decisão de 13/10/2026 foi NÃO mostrar por enquanto (quem quer doar fala antes).
+  // O Instagram da instituição já divulga o CNPJ como chave (posts de out/2026), com o
+  // nome "Instituto Casa do Tio Iranduba". Se o dono liberar, é só preencher aqui.
+  pix: {
+    chave: "",                               // ex.: "42544509000145"
+    favorecido: "",                          // ex.: "Instituto Casa do Tio Iranduba"
+    qr: ""                                   // ex.: "assets/pix-qr.png"
+  },
+
+  endereco: "",                              // A CONFIRMAR · local onde recebe doação (aparece com mapa)
+  horarios: "",                              // A CONFIRMAR · ex.: "Segunda a sexta, das 8h às 17h"
+
+  prestacaoContas: "",                       // link para relatório, se existir
+
+  logo: "assets/logo.png",                   // PROVISÓRIO: recorte de print. Trocar pelo arquivo original quando o dono mandar.
+
+  // Fotos autorizadas (criança só com autorização dos responsáveis).
+  // Ex.: { src: "assets/fotos/dia-das-criancas-1.jpg", alt: "Crianças recebendo brinquedos no Dia das Crianças" }
+  fotos: [],
+
+  credito: ""                                // ex.: "Site: Victor Mennus"
+};
+
+/* ===================== não precisa mexer daqui pra baixo ===================== */
+(function () {
+  const C = CONFIG;
+  const $ = (s) => document.querySelector(s);
+  const $$ = (s) => Array.from(document.querySelectorAll(s));
+  const mostrar = (el) => el && el.removeAttribute("hidden");
+  const tem = (v) => typeof v === "string" && v.trim() !== "";
+
+  const igUrl = "https://www.instagram.com/" + C.instagram + "/";
+  const mail = (assunto, corpo) =>
+    "mailto:" + C.email + "?subject=" + encodeURIComponent(assunto) +
+    (corpo ? "&body=" + encodeURIComponent(corpo) : "");
+  const wa = tem(C.whatsapp)
+    ? "https://wa.me/" + C.whatsapp.replace(/\D/g, "") + "?text=" + encodeURIComponent(C.mensagemWhatsapp)
+    : "";
+
+  const links = {
+    "instagram": igUrl,
+    "instagram-direct": "https://ig.me/m/" + C.instagram,
+    "email": mail("Contato pelo site", ""),
+    "email-ajudar": mail("Quero ajudar a Casa do Tio",
+      "Olá! Vi o site da Casa do Tio e quero ajudar.\n\nComo posso ajudar (doação, voluntariado...):\n\nMeu nome:\n"),
+    "whatsapp": wa,
+    "whatsapp-ajudar": wa,
+    "prestacao": C.prestacaoContas
+  };
+  // Links opcionais começam escondidos e só aparecem se o CONFIG tiver o dado.
+  const opcionais = ["whatsapp", "whatsapp-ajudar", "prestacao"];
+  $$("[data-link]").forEach((a) => {
+    const chave = a.dataset.link;
+    const url = links[chave];
+    if (tem(url)) {
+      a.href = url;
+      if (opcionais.includes(chave)) mostrar(a);
+    }
+  });
+
+  const textos = {
+    "instagram-arroba": "@" + C.instagram,
+    "email": C.email,
+    "whatsapp": tem(C.whatsapp) ? formatarFone(C.whatsapp) : "",
+    "endereco-ou-cidade": tem(C.endereco) ? C.endereco : "Iranduba, Amazonas",
+    "horarios": C.horarios
+  };
+  $$("[data-texto]").forEach((el) => { const t = textos[el.dataset.texto]; if (tem(t)) el.textContent = t; });
+
+  if (tem(C.whatsapp)) mostrar($('[data-se="whatsapp"]'));
+  if (tem(C.horarios)) mostrar($('[data-se="horarios"]'));
+
+  if (tem(C.endereco)) {
+    const m = $("#mapa");
+    const q = encodeURIComponent(C.endereco);
+    m.innerHTML = '<iframe title="Mapa: ' + C.endereco.replace(/"/g, "") + '" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=' + q + '&output=embed"></iframe>';
+    mostrar(m);
+  }
+
+  if (tem(C.pix.chave)) {
+    $("#pix-chave").textContent = "Chave: " + C.pix.chave;
+    if (tem(C.pix.favorecido)) $("#pix-favorecido").textContent = "Confira o nome no app do banco: " + C.pix.favorecido;
+    if (tem(C.pix.qr)) { const q = $("#pix-qr"); q.src = C.pix.qr; mostrar(q); }
+    $("#pix-copiar").addEventListener("click", async () => {
+      const s = $("#pix-status");
+      try { await navigator.clipboard.writeText(C.pix.chave); s.textContent = "Chave copiada."; }
+      catch (e) { s.textContent = "Não deu pra copiar automaticamente. Selecione a chave acima e copie."; }
+    });
+    mostrar($("#bloco-pix"));
+  }
+
+  if (tem(C.logo)) {
+    const img = $("#logo-img");
+    img.src = C.logo; img.alt = "Instituto Casa do Tio";
+    mostrar(img); $("#logo-texto").setAttribute("hidden", "");
+  }
+
+  if (Array.isArray(C.fotos) && C.fotos.length) {
+    const box = $("#fotos");
+    C.fotos.forEach((f) => {
+      const img = document.createElement("img");
+      img.src = f.src; img.alt = f.alt || ""; img.loading = "lazy"; img.width = 400; img.height = 400;
+      box.appendChild(img);
+    });
+    mostrar(box);
+    mostrar($("#acompanhe"));
+  }
+
+  if (tem(C.credito)) { const c = $("#credito"); c.textContent = C.credito; mostrar(c); }
+
+  function formatarFone(n) {
+    const d = n.replace(/\D/g, "").replace(/^55/, "");
+    return d.length === 11 ? "(" + d.slice(0, 2) + ") " + d.slice(2, 7) + "-" + d.slice(7) : n;
+  }
+})();
+</script>
+</body>
+</html>

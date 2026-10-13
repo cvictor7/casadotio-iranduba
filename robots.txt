@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://casadotioiranduba.pages.dev/sitemap.xml
